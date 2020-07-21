@@ -1,0 +1,19 @@
+{{#if sidebar.popular}}
+<div class="card mt-2 popular">
+    <div class="card-header bg-dark text-light">
+        <i class="fas fa-fire"></i> Most Popular
+    </div>
+    <div class="card-body">
+        <div class="row">
+            {{#each sidebar.popular}}
+                <div class="col-auto">
+                    <a href="/images/{{uniqueId}}">
+                        <img src="../../public/upload/{{filename}}"
+                            class="img-thumbnail">
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+{{/if}}
